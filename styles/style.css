@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+/* Global */
+:root {
+    --background-main: #373640;
+    --bacground-border: #63686E;
+    --button: #68A357;
+    --button-hover: #B6F7C1;
+    --text: #F9F4F5
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--text);
+    font-family: 'Fira Code', monospace;
+    height: 100vh;
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    padding: 0 20px;
+    background-color: var(--background-main);
+    border-bottom: 2px solid var(--bacground-border);
+}
+
+header h1{
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 400px) {
+    header h1{
+        font-size: 1.2rem;
+    }
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.row button {
+    margin-left: 20px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: var(--button);
+    border: 1px solid var(--bacground-border);
+}
+
+.row button:hover {
+    background-color: var(--button-hover);
+}
+
+/* MAIN */
+
+main {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #68A357;
+    height: 90%;
+}
+
+main div {
+    background-color: var(--background-main);
+    border-radius: 15px;
+    padding: 0 10px;
+}
