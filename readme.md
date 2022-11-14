@@ -15,7 +15,7 @@ My first solo project.
 
 ## Links
 
-wip
+Live Site URL: [Live Github Page](https://john-csm-tate.github.io/random-colour-generator/)
 
 ## Authors
 
