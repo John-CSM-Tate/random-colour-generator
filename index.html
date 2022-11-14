@@ -12,7 +12,13 @@
     <header>
         <h1>Colour Generator</h1>
         <div class="row">
-            <div id="copy"><i class="fa-regular fa-lg fa-copy"></i></div>
+            <input id="copy-text" type="text" />
+            <div id="clipboard">
+                <div class="tooltip">
+                    <i class="fa-regular fa-lg fa-copy"></i>
+                    <span class="tooltiptext">Copied to clipboard</span>
+                </div>
+            </div>
             <button id="gen-color">Generate</button>
         </div>
     </header>

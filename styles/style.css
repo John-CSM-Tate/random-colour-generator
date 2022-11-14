@@ -29,12 +29,12 @@ header{
 }
 
 header h1{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 @media screen and (max-width: 400px) {
     header h1{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -44,16 +44,69 @@ header h1{
     margin-right: 20px;
 }
 
+.row input[type="text"] {
+    visibility: hidden;
+    width: 0;
+}
+
 .row button {
     margin-left: 20px;
-    height: 40px;
+    padding: 10px;
+    height: 50px;
     border-radius: 25px;
+    font-size: 1rem;
+    color: var(--text);
     background-color: var(--button);
     border: 1px solid var(--bacground-border);
 }
 
 .row button:hover {
+    color: var(--background-main);
     background-color: var(--button-hover);
+}
+
+/* Tooltip */
+.tooltip {
+    position: relative;
+    display: inline;
+}
+
+.tooltip .tooltiptext {
+    /* tooltip layout */
+    visibility: hidden;
+    width: 120px;
+    background-color: var(--bacground-border);
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* position */
+    position: absolute;
+    z-index: 1;
+    bottom: -300%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* animation */
+    opacity: 0;
+    transition: opacity 0.01s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent var(--bacground-border) transparent;
+}
+
+
+.tooltip:active .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }
 
 /* MAIN */
