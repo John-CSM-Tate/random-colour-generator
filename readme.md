@@ -4,7 +4,7 @@ My first Project using HTML, CSS & JS.
 
 ## Description
 
-A website which creates a random colour(HEX code) and changes the background to the generated colour.
+A website which creates a random colour(HEX code) and changes the background to the generated colour,
 also has a copy to clipboard
 
 My first solo project.
